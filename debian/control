@@ -1,0 +1,11 @@
+Source: maemo-gpt
+Section: user/utilities
+Priority: extra
+Maintainer: Arno11 <arno11-n900@outlook.com>
+Build-Depends: debhelper (>= 10), libglib2.0-dev, libjansson-dev, libcurl4-gnutls-dev
+Standards-Version: 4.3.0
+
+Package: maemo-gpt
+Architecture: any
+Depends: ${shlibs:Depends}, libglib2.0-0, libjansson4, libcurl4, mpg123, links2
+Description: ChatGPT GTK2 client.
