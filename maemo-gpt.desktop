@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Maemo-GPT
+GenericName=Maemo-GPT
+Exec=/usr/bin/maemo-gpt
+Icon=/usr/share/icons/hicolor/64x64/apps/maemo-gpt.png
+Terminal=false
+Type=Application
+X-Osso-Type=application/x-executable
