@@ -1,0 +1,51 @@
+Maemo-GPT is a lightweight ChatGPT client written in C with a GTK2 UI.
+The purpose of this small application is to provide a usable ChatGPT client without Javascript and with very low HW specs.
+It should be possible to use this application with DeepSeek or Mistral AI in a near future.
+
+Maemo-GPT is still a WIP.
+
+### Working functionalities ###
+## OpenAI API key is needed ##
+
+-Basic chat (with history)
+
+-Assistant (config file needs assistant and thread ID's from your OpenAI account)
+
+-Vision (it needs a downloaded image from the web, like the website does)
+
+-Image generation (it uses Links2 gui to show and save images)
+
+-Text to Speech (from new text or current chat)
+
+-List files from your account
+
+-Save, load and reset chat history
+
+
+### WIP ###
+
+-Uploading file (file selection works but upload not)
+
+-Assistant and thread creation from the app (works from command line, needs to be implemented)
+
+-Speech to text (works locally but needs to be implemented)
+
+-Temperature and various parameters
+
+
+### Configuration ###
+
+The config file template is hardcoded and will appear in $HOME/.maemo-gpt folder after the first launch and after you click on 'Send' button.
+For all functionalities (excepting assistant), you just need to provide your API key.
+However Assistant needs thread and assistant ID's.
+
+
+### Miscellaneous ###
+
+Maemo-GPT uses libcurl to be able to run on low power devices: when you send a request, you can't interact with the UI until you receive the answer (it takes usually between 1 and 7 seconds on N900.
+Maemo-GPT keeps your conversation history (even when the app is closed) until you reset it.
+
+
+### For N900 users ###
+
+ChatGPT seems 'fascinated' when you tell 'it' you're using a N900 to chat.
