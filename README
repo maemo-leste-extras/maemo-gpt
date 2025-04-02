@@ -9,6 +9,8 @@ Maemo-GPT is still a WIP.
 
 -Basic chat (with history)
 
+-Model selection
+
 -Assistant (config file needs assistant and thread ID's from your OpenAI account)
 
 -Vision (it needs a downloaded image from the web, like the website does)
@@ -42,7 +44,7 @@ However Assistant needs thread and assistant ID's.
 
 ### Miscellaneous ###
 
-Maemo-GPT uses libcurl to be able to run on low power devices: when you send a request, you can't interact with the UI until you receive the answer (it takes usually between 1 and 7 seconds on N900.
+Maemo-GPT uses libcurl to be able to run on low power devices: when you send a request, you can't interact with the UI until you receive the answer (it takes usually between 1 and 7 seconds on N900).
 Maemo-GPT keeps your conversation history (even when the app is closed) until you reset it.
 
 
