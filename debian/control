@@ -7,5 +7,5 @@ Standards-Version: 4.3.0
 
 Package: maemo-gpt
 Architecture: any
-Depends: ${shlibs:Depends}, libglib2.0-0, libjansson4, libgtk2.0-0, libcurl4, mpg123, links2
+Depends: ${shlibs:Depends}, libglib2.0-0, libjansson4, libgtk2.0-0, libcurl4, mpg123
 Description: ChatGPT GTK2 client.
