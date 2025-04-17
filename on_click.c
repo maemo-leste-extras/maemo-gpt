@@ -601,7 +601,7 @@ if (!first_choice) {
 if (json_is_string(url)) {
  const gchar *response_content = json_string_value(url);
 //g_print(response_content);
-snprintf(image_link, 1000, "links2 -g \"%s\"", response_content);
+snprintf(image_link, 1000, "xdg-open \"%s\"", response_content);
 g_print(image_link);
 
 gchar* utf8_link = ascii_to_utf8(image_link);
