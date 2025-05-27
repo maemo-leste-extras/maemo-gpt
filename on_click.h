@@ -12,6 +12,8 @@ void on_play_newTTS();
 
 void on_play_newChat();
 
+void on_gpt_mini_web();
+
 void on_gpt_mini();
 
 void on_gpt_4();
