@@ -59,7 +59,7 @@ typedef struct {
  GtkWidget *file_abouttxt_item;
  GtkWidget *file_exit_item;
 //GtkWidget *submenu, *submenu_item1, *submenu_item2;
-GtkWidget *submenu2, *submenu_item3, *submenu_item4, *submenu_item5;
+GtkWidget *submenu2, *submenu_item2, *submenu_item3, *submenu_item4, *submenu_item5;
 GtkWidget *submenu3, *submenu_item6, *submenu_item7, *submenu_item8, *submenu_item9;
 //GtkWidget *submenu4, *submenu_item10, *submenu_item11;
 
@@ -123,9 +123,9 @@ window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
 //    g_signal_connect(submenu_item1, "activate", G_CALLBACK(on_menu_item_activate), "Open");
 //    gtk_menu_shell_append(GTK_MENU_SHELL(submenu), submenu_item1);
 
-//    submenu_item2 = gtk_menu_item_new_with_label("Save 2");
-//    g_signal_connect(submenu_item2, "activate", G_CALLBACK(on_menu_item_activate), "Save");
-//    gtk_menu_shell_append(GTK_MENU_SHELL(submenu), submenu_item2);
+    submenu_item2 = gtk_menu_item_new_with_label("gpt-4o-mini (web search)");
+    g_signal_connect(submenu_item2, "activate", G_CALLBACK(on_gpt_mini_web), NULL);
+    gtk_menu_shell_append(GTK_MENU_SHELL(submenu2), submenu_item2);
 
     submenu_item3 = gtk_menu_item_new_with_label("chatgpt-3.5-turbo");
     g_signal_connect(submenu_item3, "activate", G_CALLBACK(on_gpt_35), NULL);

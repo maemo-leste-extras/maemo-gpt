@@ -1,3 +1,10 @@
+maemo-gpt (1.0.2+leste1) unstable; urgency=low
+
+  * Add web search and fix model selection
+
+ -- Arno11 <arno11-n900@outlook.com>  Tue, 27 May 2025 16:32:05 +0200
+
+
 maemo-gpt (1.0.1+leste1) unstable; urgency=low
 
   * Remove links2 dep and add default browser instead
