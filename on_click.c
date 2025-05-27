@@ -241,7 +241,7 @@ return;
 
 void on_gpt_mini_web() {
     g_print("gpt-4o-mini-search-preview selected\n");
-    g_print("Current model: %\n", gpt_model);
+    g_print("Current model: %s\n", gpt_model);
     strcpy(gpt_model, "gpt-4o-mini-search-preview");
     g_print("Current model: %s\n", gpt_model);
     return;
