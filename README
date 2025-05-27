@@ -9,7 +9,9 @@ Maemo-GPT is still a WIP.
 
 -Basic chat (with history)
 
--Model selection
+-Web search
+
+-Model selection (on the fly)
 
 -Assistant (config file needs assistant and thread ID's from your OpenAI account)
 
