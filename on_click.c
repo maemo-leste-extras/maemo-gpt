@@ -14,7 +14,7 @@
 #include <sys/stat.h>
 
 
-const gchar *gpt_model = "gpt-4o-mini";
+gchar gpt_model[100] = "gpt-4o-mini";
 
 
 typedef struct {
@@ -239,12 +239,19 @@ curl_slist_free_all(headers);
 return;
 }
 
+void on_gpt_mini_web() {
+    g_print("gpt-4o-mini-search-preview selected\n");
+    g_print("Current model: %\n", gpt_model);
+    strcpy(gpt_model, "gpt-4o-mini-search-preview");
+    g_print("Current model: %s\n", gpt_model);
+    return;
+}
 
 void on_gpt_mini() {
 g_print("gpt-4o-mini selected\n");
 g_print("Current model: %s\n", gpt_model);
 
-const gchar *gpt_model = "gpt-4o-mini";
+strcpy(gpt_model, "gpt-4o-mini");
 g_print("Current model: %s\n", gpt_model);
 return;
 }
@@ -253,7 +260,7 @@ void on_gpt_4() {
 g_print("gpt-4o selected\n");
 g_print("Current model: %s\n", gpt_model);
 
-const gchar *gpt_model = "gpt-4o";
+strcpy(gpt_model, "gpt-4o");
 g_print("Current model: %s\n", gpt_model);
 return;
 }
@@ -262,7 +269,7 @@ void on_gpt_35() {
 g_print("gpt-3.5-turbo selected\n");
 g_print("Current model: %s\n", gpt_model);
 
-const gchar *gpt_model = "gpt-3.5-turbo";
+strcpy(gpt_model, "gpt-3.5-turbo");
 g_print("Current model: %s\n", gpt_model);
 return;
 }
