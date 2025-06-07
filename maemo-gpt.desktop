@@ -2,7 +2,7 @@
 Name=Maemo-GPT
 GenericName=Maemo-GPT
 Exec=/usr/bin/maemo-gpt
-Icon=/usr/share/icons/hicolor/64x64/apps/maemo-gpt.png
+Icon=/usr/share/icons/hicolor/64x64/apps/chatgpt-64.png
 Terminal=false
 Type=Application
 X-Osso-Type=application/x-executable
